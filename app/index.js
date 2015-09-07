@@ -35,7 +35,7 @@
       var hashArray = hash.split("=");
       var accessToken = hashArray[1];
       //var accessToken = "1440552386.962b453.44bd0e0e7e9241319476d6ac5a324317";
-      if(accessToken=="") {
+      if(!accessToken) {
         window.location = "https://instagram.com/oauth/authorize/?client_id="+
           config.clientId+
           "&redirect_uri="+
